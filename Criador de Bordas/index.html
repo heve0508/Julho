@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Criador de Bordas</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1>🪡 Criador de bordas</h1>
+    <div class="controls">
+        <label> 
+            Cor da Borda:
+            <input type="color" id="borderColor" value="#333333" />
+        </label>
+        <label>
+            Largura (px):
+            <input type="range" id="borderWidth" min="0" max="20" value="4" />
+        </label>
+        <label>
+            Estilo:
+            <select id="borderStyle">
+                <option value="solid">Sólida</option>
+                <option value="dashed">Tracejadas</option>
+                <option value="dotted">Pontilhada</option>
+                <option value="double">Dupla</option>
+            </select>
+        </label>
+        <label>
+            Raio (px):
+            <input type="range" id="borderRadius" min="0" max="100" value="10" />
+        </label>
+    </div>
+    <div id="previewBox">Preview</div>
+
+    <script src="script.js"></script>
+    </body>
+    </html>
