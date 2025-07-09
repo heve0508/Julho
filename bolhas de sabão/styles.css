@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(to top, #ffa0df, #cf9cff);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    font-family: Arial, sans-serif;
+  }
+  
+  #criarBolha {
+    position: absolute;
+    bottom: 20px;
+    z-index: 10;
+    padding: 12px 20px;
+    font-size: 18px;
+    background-color: #ff0077;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+
+   #criarBolha:hover {
+    background-color: #770032;
+  }
+  
+  #container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+    .bolha {
+    position: absolute;
+    bottom: 0;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    border: 2px solid rgba(200, 200, 255, 0.7);
+    animation: subir 4s ease-out forwards;
+  }
+  
+  @keyframes subir {
+    to {
+      transform: translateY(-110vh);
+      opacity: 0;
+    }
+  }
+  
