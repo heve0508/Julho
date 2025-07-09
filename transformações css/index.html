@@ -1,36 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Projeto Transformações CSS</title>
-<link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cubo Giratório</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-
-<h2>Transformações CSS</h2>
-
-<label for="rotate">Rotação (deg):</label>
-<input type="range" id="rotate" min="0" max="360" value="0" />
-<span id="rotateVal">0</span>°
-
-<br />
-<label for="scale">Escala:</label>
-<input type="range" id="scale" min="50" max="150" value="100" />
-<span id="scaleVal">1.00</span>
-
-<br />
-<label for="translateX">Transladar X (px):</label>
-<input type="range" id="translateX" min="-100" max="100" value="0" />
-<span id="translateXVal">0</span>px
-
-<br />
-<label for="translateY">Transladar Y (px):</label>
-<input type="range" id="translateY" min="-100" max="100" value="0" />
-<span id="translateYVal">0</span>px
-
-<div id="box">Transforme-me!</div>
-
-<script src="script.js"></script>
+  <div class="container">
+    <h1>🧊 Cubo Giratório</h1>
+    <div class="cena">
+      <div class="cubo">
+        <div class="face frente">1</div>
+        <div class="face tras">2</div>
+        <div class="face direita">3</div>
+        <div class="face esquerda">4</div>
+        <div class="face cima">5</div>
+        <div class="face baixo">6</div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
